@@ -2,20 +2,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
+// import java.util.Random;
 
 public class Deck {
    //private static Card[] Deck = new Card[52] ;
    
    List<Card> cardList = new ArrayList<Card>() ;
-   List<String> names = new ArrayList<String>();
+   List<String> names = new ArrayList<String>() ;
    
 
    public Deck() {
 	  names.add("Spades");
-	  names.add("Hearts");
-	  names.add("Diamonds");
-	   names.add("Clubs");
+	names.add("Hearts");
+	 names.add("Diamonds");
+	 names.add("Clubs");
 	   
 	   for (int i = 0 ; i < 4 ; i++) {
 		 
@@ -30,7 +30,7 @@ public class Deck {
    
 
    public void Shuffle() {
-	   Collections.shuffle(cardList, new Random()) ;   
+	   Collections.shuffle(cardList) ;   
    }
   
    

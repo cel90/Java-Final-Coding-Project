@@ -4,8 +4,8 @@ public class App {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
     Deck d = new Deck() ; 
-     Player p1 = new Player() ; 
-     Player p2 = new Player() ; 
+     Player p1 = new Player("1") ; 
+     Player p2 = new Player("2") ; 
      
      d.Shuffle();
      
@@ -18,9 +18,8 @@ public class App {
     	 }
      }
      for (int i=0 ; i< 26 ; i ++ ) {
-    	
-    	if (p1.flip().getValues() < p2.flip().getValues()) {
-    		 p2.incrementScore();
+         if (p1.flip().getValues() <  p2.flip().getValues()) {
+    	p2.incrementScore();
     	 }
     		 else if (p1.flip().getValues() > p2.flip().getValues())  {
     			 p1.incrementScore(); 

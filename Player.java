@@ -23,9 +23,10 @@ public class Player {
 		 System.out.println("The Player:" + name + "with the cards" ) ;  
       	for (int i = 0 ; i < hand.size(); i++) {
       		
-      		((Card) hand.get(i)).describe() ; 
-      	}
-    }
+      	((Card) hand.get(i)).describe() ; 
+     	}
+   }
+	
 	 public Card flip () {
 			
 		return hand.remove(0);
@@ -38,7 +39,7 @@ public class Player {
 		}
 	 public void incrementScore() {
 		
-		setS(getS() + 1) ;
+		s++ ;
 	 }
 	 //public int scr = s ;
 	 
