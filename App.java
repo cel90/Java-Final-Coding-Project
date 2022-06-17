@@ -3,7 +3,8 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    Deck d = new Deck() ; 
+    
+		Deck d = new Deck() ; 
      Player p1 = new Player("1") ; 
      Player p2 = new Player("2") ; 
      Card c = new Card(3 , "Spades") ;
@@ -28,10 +29,14 @@ public class App {
      } 
     	int ps1 = p1.getS() ;
     	int ps2 = p2.getS() ;
-    	System.out.println(c.describe());
+        System.out.println("SCORES");
+        System.out.println("  ||");
+       
     	System.out.println("P1: " + ps1);
     	System.out.println("P2: " + ps2);
-    	
+    	 System.out.println("----------");
+    	System.out.println("WINNER");
+    	 System.out.println("  ||");
     	 if (ps1 > ps2 ) {
     		 System.out.println("the winner is player 1") ;
     		 
