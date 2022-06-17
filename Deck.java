@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-// import java.util.Random;
+import java.util.Random;
 
 public class Deck {
-   //private static Card[] Deck = new Card[52] ;
+   
    
    List<Card> cardList = new ArrayList<Card>() ;
    List<String> names = new ArrayList<String>() ;

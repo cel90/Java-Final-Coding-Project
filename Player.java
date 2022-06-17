@@ -21,10 +21,9 @@ public class Player {
 	
 	 public void describe() {
 		 System.out.println("The Player:" + name + "with the cards" ) ;  
-      	for (int i = 0 ; i < hand.size(); i++) {
-      		
-      	((Card) hand.get(i)).describe() ; 
-     	}
+      	for (Card h : hand ) {
+      		h.describe() ;
+      	}
    }
 	
 	 public Card flip () {
@@ -41,7 +40,7 @@ public class Player {
 		
 		s++ ;
 	 }
-	 //public int scr = s ;
+
 	 
 	public String getName() {
 		return name;

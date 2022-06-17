@@ -1,9 +1,7 @@
 
 public class Card {
        private int values ;   //= new String[] {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"} ;
-       private String names ;  //= new String[] {"Spades","Hearts","Diamonds","Clubs"} ;
-	
-       
+       private String names ;  //= new String[] {"Spades","Hearts","Diamonds","Clubs"} ;     
        
        public Card(int v, String S ) {
     	   values = v ; 
@@ -47,26 +45,16 @@ public class Card {
     		   names = "Ace" ;
     	   }
     	   
- 
-          names = names + "of" + S ; 
+          names = names + " of " + S ; 
        }
        
-       public void describe() {
+       public String describe() {
       
-         	 System.out.println("This is the card:" + names + "and value of:" + values  );
-			// return "This is the card:" + names + "and value of:" + values  ; 
+         
+			return "This is the card: " + names + " and value of: " + values  ; 
 	
        }
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+                
        public int getValues() {
 		return values;
 	}
@@ -79,13 +67,4 @@ public class Card {
 	public void setNames(String names) {
 		this.names = names;
 	}
-
-	
-
-	
-	
-       
- 
-
-
 }
